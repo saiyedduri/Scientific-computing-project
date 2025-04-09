@@ -1,0 +1,116 @@
+Evaluating model with learning_rate=0.001, batch_size=32, num_epochs=7,optimizer=Adam
+Fold 1/2
+Epoch 1/7 - 
+                    Train Loss: 2.4078,
+                    Training Accuracy: 18.07%
+
+Epoch 1/7 - 
+                        Validation Loss: 2.1391,
+                        Validation Accuracy: 19.84%
+
+Epoch 2/7 - 
+                    Train Loss: 2.1976,
+                    Training Accuracy: 20.27%
+
+Epoch 2/7 - 
+                        Validation Loss: 2.0866,
+                        Validation Accuracy: 19.25%
+
+Epoch 3/7 - 
+                    Train Loss: 2.0601,
+                    Training Accuracy: 21.13%
+
+Epoch 3/7 - 
+                        Validation Loss: 2.4026,
+                        Validation Accuracy: 17.54%
+
+Epoch 4/7 - 
+                    Train Loss: 2.0753,
+                    Training Accuracy: 22.97%
+
+Epoch 4/7 - 
+                        Validation Loss: 2.1723,
+                        Validation Accuracy: 22.94%
+
+Epoch 5/7 - 
+                    Train Loss: 2.0433,
+                    Training Accuracy: 26.16%
+
+Epoch 5/7 - 
+                        Validation Loss: 2.0170,
+                        Validation Accuracy: 26.69%
+
+Epoch 6/7 - 
+                    Train Loss: 2.0067,
+                    Training Accuracy: 27.11%
+
+Epoch 6/7 - 
+                        Validation Loss: 2.5813,
+                        Validation Accuracy: 23.26%
+
+Epoch 7/7 - 
+                    Train Loss: 1.9492,
+                    Training Accuracy: 28.27%
+
+Epoch 7/7 - 
+                        Validation Loss: 2.0991,
+                        Validation Accuracy: 25.67%
+
+Fold 2/2
+Epoch 1/7 - 
+                    Train Loss: 2.4123,
+                    Training Accuracy: 18.85%
+
+Epoch 1/7 - 
+                        Validation Loss: 4.0502,
+                        Validation Accuracy: 19.64%
+
+Epoch 2/7 - 
+                    Train Loss: 2.1991,
+                    Training Accuracy: 20.04%
+
+Epoch 2/7 - 
+                        Validation Loss: 2.1513,
+                        Validation Accuracy: 20.76%
+
+Epoch 3/7 - 
+                    Train Loss: 2.0727,
+                    Training Accuracy: 22.64%
+
+Epoch 3/7 - 
+                        Validation Loss: 3.2534,
+                        Validation Accuracy: 21.45%
+
+Epoch 4/7 - 
+                    Train Loss: 2.0709,
+                    Training Accuracy: 22.74%
+
+Epoch 4/7 - 
+                        Validation Loss: 2.2273,
+                        Validation Accuracy: 22.41%
+
+Epoch 5/7 - 
+                    Train Loss: 2.0248,
+                    Training Accuracy: 24.25%
+
+Epoch 5/7 - 
+                        Validation Loss: 2.0411,
+                        Validation Accuracy: 24.58%
+
+Epoch 6/7 - 
+                    Train Loss: 2.0511,
+                    Training Accuracy: 24.09%
+
+Epoch 6/7 - 
+                        Validation Loss: 2.0418,
+                        Validation Accuracy: 24.58%
+
+Epoch 7/7 - 
+                    Train Loss: 2.0043,
+                    Training Accuracy: 26.49%
+
+Epoch 7/7 - 
+                        Validation Loss: 1.9891,
+                        Validation Accuracy: 25.01%
+
+   Average validation accuracy:25.337%

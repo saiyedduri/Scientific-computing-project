@@ -1,0 +1,49 @@
+(/home/sy37tovi/Scientific_computing_project2/env) [sy37tovi@mlogin01 new_scripts]$ python main.py --retrain ./../results/best_model_LR_0.001_BS_16_EP_12_SGD.pth --skip_tuning --lr 0.001 --bs 16 --epochs 12 --optim SGD --k_folds 2
+Loaded model from ./../results/best_model_LR_0.001_BS_16_EP_12_SGD.pth
+DataLoader loaded from train_dataloader.pth
+Epoch 1/12 - 
+                    Train Loss: 1.7026, 
+                    Training Accuracy: 40.26%
+
+Epoch 2/12 - 
+                    Train Loss: 1.5994, 
+                    Training Accuracy: 42.89%
+
+Epoch 3/12 - 
+                    Train Loss: 1.5129, 
+                    Training Accuracy: 46.89%
+
+Epoch 4/12 - 
+                    Train Loss: 1.4405, 
+                    Training Accuracy: 48.68%
+
+Epoch 5/12 - 
+                    Train Loss: 1.3438,
+                    Training Accuracy: 53.03%
+
+Epoch 6/12 - 
+                    Train Loss: 1.2218,
+                    Training Accuracy: 56.65%
+
+Epoch 7/12 - 
+                    Train Loss: 1.0785,
+                    Training Accuracy: 62.24%
+
+Epoch 8/12 - 
+                    Train Loss: 1.0196,
+                    Training Accuracy: 64.22%
+
+Epoch 9/12 - 
+                    Train Loss: 0.8995,
+                    Training Accuracy: 68.46%
+
+Epoch 10/12 - 
+                    Train Loss: 0.7786,
+                    Training Accuracy: 72.52%
+
+Epoch 11/12 -
+                    Train Loss: 0.6552,
+                    Training Accuracy: 76.79%
+Epoch 12/12 -
+                    Train Loss: 0.5342,
+                    Training Accuracy: 79.89%
