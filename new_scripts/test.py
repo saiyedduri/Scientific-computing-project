@@ -9,7 +9,7 @@ from torchvision import transforms, datasets
 import torch.nn as nn
 from torch.utils.data import DataLoader
 
-# Importing functions and classes from split_train_test.py, plotting.py, preproessing.py
+# Importing functions and classes from plotting.py,model.py, preprocessing.py
 from preprocessing import load_dataloader
 from model import SimplifiedResnet50
 from plotting import plot_confusion_matrix, visualize_batch, min_max_image
@@ -30,8 +30,7 @@ def load_test_images(test_data_path, batch_size=32,shuffle=False):
     # Normalization will be applied later
     basic_transform = transforms.Compose([
         transforms.Resize((224, 224)),
-        transforms.ToTensor()
-    ])
+        transforms.ToTensor()])
     
     # Load the test dataset using ImageFolder
     test_dataset = datasets.ImageFolder(root=test_data_path, transform=basic_transform)

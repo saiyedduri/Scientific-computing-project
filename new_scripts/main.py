@@ -10,7 +10,7 @@ import torch.nn as nn
 from torchvision import transforms
 from torch.utils.data import DataLoader
 
-# Importing functions and classes from split_train_test.py, plotting.py, preproessing.py,hyperparametertuning.py
+# Importing functions and classes from split_train_test.py, plotting.py, preprocessing.py,hyperparametertuning.py
 from split_train_test import SplitTrainTest
 from hyperparametertuning import TransformedSubset, HyperparameterTuning
 from preprocessing import load_dataloader, compute_class_stats, ImageTransformer
@@ -116,7 +116,7 @@ class ModelTrainingPipeline:
             train_loader, _ = load_dataloader("train_dataloader.pth")
             self.tuner = HyperparameterTuning(
                 model=SimplifiedResnet50,
-                num_classes=len(train_loader.dataset.classes)  ,
+                num_classes=len(train_loader.dataset.classes),
                 train_dataset=train_loader.dataset,
                 device=self.device)
             
@@ -138,7 +138,7 @@ class ModelTrainingPipeline:
         checkpoint = torch.load(checkpoint_path,weights_only=False)
         self.model = SimplifiedResnet50(num_classes= checkpoint["best_hyperparameters"]["num_classes"])
         
-        self.model.hyperparameters = { "batch_size": checkpoint["best_hyperparameters"]["batch_size"],
+        self.model.hyperparameters = {"batch_size": checkpoint["best_hyperparameters"]["batch_size"],
                                     "num_epochs": checkpoint["best_hyperparameters"]["num_epochs"],
                                     "learning_rate": checkpoint["best_hyperparameters"]["learning_rate"]}
     
@@ -205,11 +205,11 @@ class ModelTrainingPipeline:
                     save_acc_path=os.path.join(self.plots_dir, "full_train_accuracy_curve.png"))
                                 
 # -------------------------------------------------------
-# Run the training and testing pipeline in main execution
+# Run the training pipeline in main execution
 # --------------------------------------------------------
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Parallel Hyperparameter Tuning')
+    parser = argparse.ArgumentParser(description='Hyperparameter Tuning')
     parser.add_argument('--lr', nargs='+', type=float, required=True,
                        help='Learning rates (space-separated)')
     parser.add_argument('--bs', nargs='+', type=int, required=True,
@@ -273,7 +273,7 @@ if __name__ == "__main__":
     # Retraining phase
     if args.retrain:
         if not os.path.exists(args.retrain):
-            raise FileNotFoundError(f"Checkpoint file {args.retrain} not found. Example: python new_main.py --retrain ./results/best_model_LR_0.001_BS_32_EP_20_Adam.pth --skip_tuning")
+            raise FileNotFoundError(f"Checkpoint file {args.retrain} not found. Example: python main.py --retrain ./results/best_model_LR_0.001_BS_32_EP_20_Adam.pth --skip_tuning")
     
         # Initializing the best model
         pipeline.initialize_best_model(args.retrain)

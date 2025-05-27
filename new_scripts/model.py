@@ -157,7 +157,7 @@ class SimplifiedResnet50(nn.Module):
         Returns:
             nn.Sequential: A sequential container of BottleneckBlocks.
         """
-        # Renewing the downsample to None each time 
+        # Renewing the downsample to None each time
         downsample=None
         # Initializing to downsample if the output channels is not equal to input channels or stride>1
         if stride!=1 or self.in_channels!=out_channels*BottleneckBlock.expansion:
@@ -216,7 +216,7 @@ class SimplifiedResnet50(nn.Module):
             return x
         except RuntimeError as e:
             if "Input type" in str(e) or "shape" in str(e):
-                print(f"Input Shape Error: Expected input format [Number of batches, Channels, Height, Wwight]")
+                print(f"Input Shape Error: Expected input format [Number of batches, Channels, Height, Weight]")
                 print(f"Received shape: {x.shape if x is not None else 'None'}")
             raise
 
@@ -374,7 +374,6 @@ def main():
     4. Training for 10 epochs
     """
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
     # Loading the train dataloader and validation dataloader.
     train_loader, _ = load_dataloader("train_dataloader.pth")
     
